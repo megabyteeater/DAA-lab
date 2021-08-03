@@ -1,0 +1,26 @@
+//C++ code
+// Name : Rakshit Choudhary , Reg no: 20BCE2663 , Mail: rakshit.choudhary2020@vitstudent.ac.in
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int factorial(int);
+    int fact,n;
+    cout<<"Enter positive number : ";
+    cin>>n;
+    fact=factorial(n);
+    cout<<"Factorial of number : "<<fact<<endl;
+    return 0;
+}
+
+int factorial(int n)
+{
+    if(n<0)
+        return -1;  // wrong value
+    else if (n==0)
+        return 1;
+    else{
+        return (n*factorial(n-1));
+    }
+}
